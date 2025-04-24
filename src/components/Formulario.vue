@@ -35,11 +35,11 @@
 </script>
 
 <template>
-  <Alerta v-if="error">{{ error }}</Alerta>
   <form
-    class="formulario"
-    @submit.prevent="consultarClima"
+  class="formulario"
+  @submit.prevent="consultarClima"
   >
+    <Alerta v-if="error">{{ error }}</Alerta>
     <div class="campo">
       <label for="ciudad">Ciudad</label>
       <input 
